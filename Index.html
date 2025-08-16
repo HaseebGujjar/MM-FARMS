@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM Farms | Premium Eggs, Rice & Wheat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <img src="./Images/MMLogo.png" alt="MM Farms Logo">
+                    MM FARMS
+                </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-icons">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-user"></i></a>
+                    <a href="#" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Premium Farm Products From MM Farms</h1>
+                <p>Experience the freshness and quality of our organic eggs, rice, and wheat straight from our farms to your table.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn">Shop Now</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card card-3d">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>100% Organic</h3>
+                    <p>All our products are grown and produced using organic methods without harmful chemicals.</p>
+                </div>
+                <div class="feature-card card-3d">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>We maintain the highest standards to ensure you get the best quality farm products.</p>
+                </div>
+                <div class="feature-card card-3d">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your orders delivered fresh to your doorstep within 24 hours in major cities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card card-3d">
+                    <span class="product-badge">Best Seller</span>
+                    <div class="product-img">
+                        <img src="./Images/Egg.jpg" alt="Organic Eggs">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Eggs</span>
+                        <h3 class="product-title">Organic Free-Range Eggs</h3>
+                        <div class="product-price">
+                            <div>
+                                <span class="old-price">Rs. 250</span>
+                                <span class="price">Rs. 220</span>
+                            </div>
+                            <button class="add-to-cart" data-id="1" data-name="Organic Free-Range Eggs" data-price="220" data-image="https://images.unsplash.com/photo-1587486913049-53fc88980cfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card card-3d">
+                    <div class="product-img">
+                        <img 
+                        src="./Images/Rice1.jpg" 
+                        alt="Basmati Rice"
+                        id="riceimg"
+                        onmouseover="changeImage('riceimg','Images/Rice.jpg')"
+                        onmouseout="changeImage('riceimg','Images/Rice1.jpg')">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Rice</span>
+                        <h3 class="product-title">Premium Basmati Rice</h3>
+                        <div class="product-price">
+                            <div>
+                                <span class="old-price">Rs. 350</span>
+                                <span class="price">Rs. 320</span>
+                            </div>
+                            <button class="add-to-cart" data-id="2" data-name="Premium Basmati Rice" data-price="320" data-image="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card card-3d">
+                    <span class="product-badge">New</span>
+                    <div class="product-img">
+                        <img 
+                        src="./Images/wheat.jpg" 
+                        alt="Whole Wheat" 
+                        id="wheatimg" 
+                        onmouseover="changeImage('wheatimg','Images/wheat1.jpg')"
+                        onmouseout="changeImage('wheatimg', 'Images/wheat.jpg')">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Wheat</span>
+                        <h3 class="product-title">Organic Whole Wheat</h3>
+                        <div class="product-price">
+                            <div>
+                                <span class="old-price">Rs. 280</span>
+                                <span class="price">Rs. 250</span>
+                            </div>
+                            <button class="add-to-cart" data-id="3" data-name="Organic Whole Wheat" data-price="250" data-image="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="MM Farms">
+                </div>
+                <div class="about-text">
+                    <h2>About MM Farms</h2>
+                    <p>Founded in 2010, MM Farms has been a pioneer in organic farming in Pakistan. We believe in sustainable agriculture that benefits both our customers and the environment.</p>
+                    <p>Our farms are located in the fertile regions of Punjab, where we grow our crops and raise our poultry with the utmost care and without the use of harmful chemicals or additives.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">12+</div>
+                            <div class="stat-text">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-text">Happy Customers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-text">Organic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-slide active">
+                    <p class="testimonial-text">The eggs from MM Farms are the freshest I've ever had. The yolks are so rich and vibrant, you can really taste the difference from store-bought eggs.</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Khan">
+                        </div>
+                        <div class="author-name">Sarah Khan</div>
+                        <div class="author-role">Lahore</div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <p class="testimonial-text">I've been buying MM Farms basmati rice for years now. The quality is consistently excellent, and it cooks up perfectly every time.</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Ahmed Raza">
+                        </div>
+                        <div class="author-name">Ahmed Raza</div>
+                        <div class="author-role">Islamabad</div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <p class="testimonial-text">As a professional chef, I demand the best ingredients. MM Farms never disappoints with their premium quality wheat and eggs.</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Chef Farhan">
+                        </div>
+                        <div class="author-name">Chef Farhan</div>
+                        <div class="author-role">Karachi</div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <div class="slider-dot active" data-slide="0"></div>
+                    <div class="slider-dot" data-slide="1"></div>
+                    <div class="slider-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-form">
+                <form id="contact-form" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Location Google Map -->
+     <section class="location" id="location">
+        <h2 class="left">Head Office Location</h2>
+        <h2 class="right">Factory Location</h2>
+        <div class="maps">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1988.5167528647712!2d74.28961748816162!3d31.56745354587435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191d0009a8fd37%3A0x16c37426e802a249!2sMMGT%20Industrial%20%26%20Trading%20Co.%20(SMC-PVT)%20Ltd.!5e0!3m2!1sen!2s!4v1754552475692!5m2!1sen!2s" width="630" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6776.344290993784!2d74.22929850949879!3d31.874735561391997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391927004b795dcd%3A0xe40220f501a764e5!2sMMGT%20INDUSTRIAL%20TRADING%20SMC-PVT!5e0!3m2!1sen!2sus!4v1754561759902!5m2!1sen!2sus" width="625" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+</div>
+</section>
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with our latest products, offers, and farming tips.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn-secondary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>MM Farms</h3>
+                    <p>Providing premium quality organic farm products since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Eggs</a></li>
+                        <li><a href="#">Rice</a></li>
+                        <li><a href="#">Wheat</a></li>
+                        <li><a href="#">Other Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 3A Abdali Road, IslamPura Lahore, Pakistan</p>
+                    <p><i class="fas fa-phone"></i> +92 304 8870061 </p>
+                    <p><i class="fas fa-envelope"></i> info@mmfarms.pk</p>
+                    <p> Haseeb</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MM Farms. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal-overlay" id="cart-modal">
+        <div class="cart-modal">
+            <div class="modal-header">
+                <h3>Your Cart</h3>
+                <button class="close-modal" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be added here dynamically -->
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Your cart is empty</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="cart-total">
+                    Total: <span id="cart-total">Rs. 0</span>
+                </div>
+                <button class="btn checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
